@@ -1,10 +1,10 @@
-// object with keys mango, billy - and value of cat dog (string)
+// Object with keys mango, billy - and value of cat dog (string)
 const simpleObject = {
   mango: "cat",
   billy: "dog",
 };
 
-// object with keys yummy and yuck, and values of string arrays
+// Object with keys yummy and yuck, and values of string arrays
 const arrayObject = {
   yummy: ["chocolate", "moons", "purple rice yoghurt"],
   yuck: ["salad", "artichoke"],
@@ -40,7 +40,7 @@ const trackStreams = {
   feather: 50,
 };
 
-// reduced the array of numbers into a single number
+// Reduced the array of numbers into a single number
 const totalStreams = Object.values(trackStreams).reduce(
   (value, currentvalue) => value + currentvalue,
   0

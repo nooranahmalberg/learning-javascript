@@ -1,14 +1,14 @@
 /* Strings are a data type for web contents */
 
-/* pay attention to the quotation mark in quotes. Blackslash can be used as an escape thing. Or use mix of single quotes and double quotes
-\' single quite
-\" double quote
-\\ backslash
-\n ?
-\r ?
-\t ?
-\b ?
-\f ?
+/* Something to consider is using quotes within quotes when coding. Blackslash can be used as an escape thing. Or use mix of single quotes and double quotes
+\' to escape single quite
+\" to escape double quote
+\\ backslash and more:
+\n 
+\r 
+\t 
+\b 
+\f 
 */
 
 // concatonate strings
@@ -21,22 +21,22 @@ var myStr = "learning js is";
 
 myStr += adj;
 
-//length of string
+//Length of string
 var author = "lovelace";
 author.length;
 
-//get a character in the tring
+//Get first character in the string
 var firstName = "ada";
 firstName[0];
 
-// strings are immutable. that means that they cannot be changed. this is not possible:
-var profileBio = "looking for true love";
+// Strings are immutable, which means that parts of the value cannot be targetted and changed. For example, the following is not possible:
+var profileBio = "learning in public";
 profileBio[0] = "L";
 
-// this will work though
-profileBio = "Looking for true love";
+// However, this will work because the whole value is changed:
+profileBio = "Learning in public";
 
-// finding the last letter of the string
+// Using .length to the last letter of the string
 var lastLetter = profileBio[profileBio.length - 1];
 
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
@@ -54,4 +54,4 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   return result;
 }
 
-wordBlanks("kite", "purple", "swerved", "choppily");
+wordBlanks("kite", "red", "drifted", "slowly");

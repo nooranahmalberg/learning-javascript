@@ -49,3 +49,16 @@ const ranahsWardrobe = [
   ["Shoes", 6],
   ["Bags", 500],
 ];
+
+//Declaring variable. Defaulting to const is recommended because the declaration should always reflect the intent of that code.
+const myPets = ["Mango", "Billy"];
+const solidCoatColours = ["orange", "black", "brown", "white", "beige"];
+
+let petDescription =
+  myPets[0] + "'s coat colour is " + solidCoatColours[0] + ".";
+
+petDescription =
+  myPets[1] +
+  "'s coat colour is " +
+  solidCoatColours[4] +
+  '. When he woofs, he is saying, "Please play with me".';
