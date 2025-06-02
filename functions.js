@@ -1,3 +1,5 @@
+/* Function allows us to make reusable code in JS */
+
 // Declaring a function
 function reusableFunction() {
   console.log("Hi world!");
@@ -10,7 +12,7 @@ reusableFunction();
 // Data can be passed through the function with arguments
 
 function postEngagementMetric(likes, comments, shares, saves) {
-  console.log(likes + comments * 2 + shares * 1.5 + saves);
+  return likes + comments * 2 + shares * 1.5 + saves;
 }
 
 postEngagementMetric(500, 50, 0, 20);
@@ -40,4 +42,25 @@ function commentsToLikesRatio(likes, comments) {
 commentsToLikesRatio(10, 5);
 
 // If nothing is specified to be returned in a function an undefined value will be returned when that function is called
-// TBD
+
+// Next in line function can simulate a computer science concept called Queue
+// JSON.stringify(exampleArray) changes an array into a string
+
+function nextInLine(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+
+var testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+// You can leave a function any time with a return statement
+
+function abTest(a, b) {
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+}

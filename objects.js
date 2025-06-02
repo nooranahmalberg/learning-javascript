@@ -1,8 +1,21 @@
+// These are similar to arrays but instead of using indexes to access data, you use properties.
+
+// Properties are also known as Keys. Objects contain key-value pairings.
+
 // Object with keys mango, billy - and value of cat dog (string)
 const simpleObject = {
   mango: "cat",
   billy: "dog",
+  "junior monster": "labubu",
 };
+
+//Dot notations to access properties
+
+var species = simpleObject.mango;
+
+// Bracket notations to access a property exspecially when there is a space in the name
+
+species = simpleObject["junior monster"];
 
 // Object with keys yummy and yuck, and values of string arrays
 const arrayObject = {
